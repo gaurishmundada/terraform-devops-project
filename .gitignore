@@ -1,0 +1,21 @@
+# Terraform cache
+.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+
+# Ignore SSH keys
+*.pem
+*.key
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
