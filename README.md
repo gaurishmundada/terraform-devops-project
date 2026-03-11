@@ -1,5 +1,4 @@
 # Terraform DevOps Project
-# Terraform DevOps Project
 
 This project provisions AWS infrastructure using Terraform.
 
