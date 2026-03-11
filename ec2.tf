@@ -3,6 +3,9 @@
 resource "aws_key_pair" "my_key" {
   key_name   = "terra-key-ec2"
   public_key = file("terra-key-ec2.pub")
+  tags = {
+    Environment = var.env
+  }
 }
 
 
@@ -53,6 +56,7 @@ resource "aws_security_group" "my_security_group" {
 
   tags = {
     Name = "automate-sg"
+    Environment = var.env
   }
 
 }
